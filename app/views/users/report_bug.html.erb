@@ -1,0 +1,12 @@
+<div class="form">
+  <h3>Report Your Bug</h3>
+<%= form_tag register_bug_path do  %>
+      <label class="name">Name</label>
+      <input class ="fname" ,type="text" name="name" value="<%= params[:name] %>"><br>
+      <label class="email">Email</label>
+      <input  class ="femail",type="email" name="email" value="<%= params[:email] %>"><br>
+      <label class="query">Query</label>
+      <textarea name="query" class ="fquery" value="<%= params[:query] %>"></textarea><br>
+      <input  class="submit" type="submit">
+<% end %>
+</div>
